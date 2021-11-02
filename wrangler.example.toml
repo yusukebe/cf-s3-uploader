@@ -17,6 +17,7 @@ format = "service-worker"
 
 [vars]
 S3_BUCKET = "your_bucket_name"
+S3_FOLDER = "folder-name/"
 S3_REGION = "s3_region_name"
 
 [secrets]

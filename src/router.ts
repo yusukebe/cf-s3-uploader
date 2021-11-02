@@ -8,6 +8,7 @@ const aws = new AwsClient({ accessKeyId: AWS_ID, secretAccessKey: AWS_SECRET })
 
 declare let S3_REGION: string
 declare let S3_BUCKET: string
+declare let S3_FOLDER: string
 
 const endpoint = 'https://s3.' + S3_REGION + '.amazonaws.com/' + S3_BUCKET + '/'
 
@@ -55,7 +56,7 @@ router.post('/upload', async (request: Request) => {
   const body = Buffer.from(json.body, 'base64')
   const type = detectType(json.body)
   const filename = (await createHash(body)) + '.' + type?.suffix
-  const uploadUrl = endpoint + filename
+  const uploadUrl = endpoint + S3_FOLDER + filename
 
   console.log('Try to upload to S3...')
   const res = await aws.fetch(uploadUrl, {
