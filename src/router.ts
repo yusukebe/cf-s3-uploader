@@ -6,9 +6,10 @@ declare let AWS_ID: string
 declare let AWS_SECRET: string
 const aws = new AwsClient({ accessKeyId: AWS_ID, secretAccessKey: AWS_SECRET })
 
-const region = 'ap-northeast-1'
-const bucket = 'yusukebe.com'
-const endpoint = 'https://s3.' + region + '.amazonaws.com/' + bucket + '/'
+declare let S3_REGION: string
+declare let S3_BUCKET: string
+
+const endpoint = 'https://s3.' + S3_REGION + '.amazonaws.com/' + S3_BUCKET + '/'
 
 const router = Router()
 

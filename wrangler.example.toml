@@ -15,6 +15,10 @@ command = "npm install && npm run build"
 [build.upload]
 format = "service-worker"
 
+[vars]
+S3_BUCKET = "your_bucket_name"
+S3_REGION = "s3_region_name"
+
 [secrets]
 # NAME
 # PASS
