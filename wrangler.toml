@@ -1,0 +1,22 @@
+account_id = ""
+compatibility_date = "2021-11-01"
+name = "s3-uploader"
+route = ""
+type = "javascript"
+workers_dev = true
+zone_id = ""
+
+[site]
+bucket = "./public"
+entry-point = "./"
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
+
+[secrets]
+# NAME
+# PASS
+# AWS_ID
+# AWS_SECRET
