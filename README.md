@@ -4,9 +4,16 @@ Cloudflare Worker for uploading images to Amazon S3.
 
 ## Set up
 
-Copy `wrangler.exmple.toml` to `wrangler.tmol`.
+First, git clone:
 
+```bash
+$ https://github.com/yusukebe/cf-s3-uploader.git
+$ cd cf-s3-uploader
 ```
+
+Copy `wrangler.exmple.toml` to `wrangler.tmol`:
+
+```bash
 $ cp wrangler.example.toml wrangler.toml
 ```
 
@@ -16,8 +23,8 @@ $ cp wrangler.example.toml wrangler.toml
 
 Enviroment variables are:
 
-- S3_BUCKET - Your S3 bucket name
-- S3_REGION - S3 region name
+- `S3_BUCKET` - Your S3 bucket name
+- `S3_REGION` - S3 region name
 
 To set these, `wrangler.toml`
 
