@@ -79,6 +79,16 @@ Value of `body` is Basic64 string of image binary.
 }
 ```
 
+## Use with Shortcuts
+
+Awesome!!!
+
+![Screenshot](https://user-images.githubusercontent.com/10682/139781916-8c22a6ae-b21b-48ff-ad1c-08d396f5cdd0.gif)
+
+Setting shortcuts like this:
+
+![Screenshot](https://s3.ap-northeast-1.amazonaws.com/yusukebe.com/images/57f68c29ea5d0af4e9480ad04e89d152.png)
+
 ## Author
 
 Yusuke Wada <https://github.com/yusukebe>
